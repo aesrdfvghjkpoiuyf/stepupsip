@@ -64,7 +64,7 @@ export default function ResultsDisplay({ result, sipAmount, period, interestRate
 
             <p className="text-gray-600 text-sm mb-1">Total Future Value</p>
             <p className="text-xs text-gray-500 mb-2">(Your SIP Investment Amount + Growth) with out step up</p>
-            <p className="text-lg font-bold text-[#293895]">{formatCurrency(result.maturity_amount)}</p>
+            <p className="text-lg font-bold text-[#61D48A]">{formatCurrency(result.maturity_amount)}</p>
           </div>
 
           {/* With Step Up */}
@@ -77,7 +77,7 @@ export default function ResultsDisplay({ result, sipAmount, period, interestRate
 
             <p className="text-gray-600 text-sm mb-1">Total Future Value</p>
             <p className="text-xs text-gray-500 mb-2">(Your SIP Investment Amount + Growth) with step up</p>
-            <p className="text-lg font-bold text-[#9fcc3a]">{formatCurrency(result.stepup_maturity_amount)}</p>
+            <p className="text-lg font-bold text-[#61D48A]">{formatCurrency(result.stepup_maturity_amount)}</p>
           </div>
         </div>
       </Card>
@@ -85,7 +85,7 @@ export default function ResultsDisplay({ result, sipAmount, period, interestRate
       <div className="flex justify-center">
         <Button
           onClick={handleDownloadPDF}
-          className="bg-[#293895] hover:bg-[#1f2860] text-white px-6 py-2 rounded-md flex items-center gap-2"
+          className="bg-[#61D48A] hover:bg-[#1f2860] text-white px-6 py-2 rounded-md flex items-center gap-2"
         >
           <Download size={18} />
           Download PDF
