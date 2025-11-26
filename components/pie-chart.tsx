@@ -15,7 +15,7 @@ export default function PieChart({ invested, growth }: PieChartProps) {
     datasets: [
       {
         data: [invested, growth],
-        backgroundColor: ["#61D48A", "#61D48A"],
+        backgroundColor: ["#262A42", "#61D48A"],
         borderColor: ["#1a2555", "#7da526"],
         borderWidth: 2,
       },
