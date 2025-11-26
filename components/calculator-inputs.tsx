@@ -29,7 +29,7 @@ export default function CalculatorInputs({
       <div className="mb-8">
         <div className="flex justify-between items-center mb-3">
           <label className="text-gray-800 font-medium text-sm">How much you can invest through monthly SIP? (Rs)</label>
-          <span className="text-[#293895] font-bold text-lg">{sipAmount.toLocaleString()}</span>
+          <span className="text-[#61D48A] font-bold text-lg">{sipAmount.toLocaleString()}</span>
         </div>
         <input
           type="range"
@@ -38,7 +38,7 @@ export default function CalculatorInputs({
           step="10000"
           value={sipAmount}
           onChange={(e) => setSipAmount(Number(e.target.value))}
-          className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#293895]"
+          className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#61D48A]"
         />
         <div className="flex justify-between text-xs text-gray-500 mt-2">
           <span>0</span>
@@ -53,7 +53,7 @@ export default function CalculatorInputs({
       <div className="mb-8">
         <div className="flex justify-between items-center mb-3">
           <label className="text-gray-800 font-medium text-sm">How many months will you continue the SIP?</label>
-          <span className="text-[#293895] font-bold text-lg">{period}</span>
+          <span className="text-[#61D48A] font-bold text-lg">{period}</span>
         </div>
         <input
           type="range"
@@ -62,7 +62,7 @@ export default function CalculatorInputs({
           step="1"
           value={period}
           onChange={(e) => setPeriod(Number(e.target.value))}
-          className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#293895]"
+          className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#61D48A]"
         />
         <div className="flex justify-between text-xs text-gray-500 mt-2">
           <span>0</span>
@@ -77,7 +77,7 @@ export default function CalculatorInputs({
       <div className="mb-8">
         <div className="flex justify-between items-center mb-3">
           <label className="text-gray-800 font-medium text-sm">What rate of return do you expect? (% per annum)</label>
-          <span className="text-[#293895] font-bold text-lg">{interestRate.toFixed(1)}</span>
+          <span className="text-[#61D48A] font-bold text-lg">{interestRate.toFixed(1)}</span>
         </div>
         <input
           type="range"
@@ -86,7 +86,7 @@ export default function CalculatorInputs({
           step="0.1"
           value={interestRate}
           onChange={(e) => setInterestRate(Number(e.target.value))}
-          className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#293895]"
+          className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#61D48A]"
         />
         <div className="flex justify-between text-xs text-gray-500 mt-2">
           <span>5</span>
@@ -105,7 +105,7 @@ export default function CalculatorInputs({
           <label className="text-gray-800 font-medium text-sm">
             How much percentage step up monthly SIP? (% per annum)
           </label>
-          <span className="text-[#293895] font-bold text-lg">{stepupValue}</span>
+          <span className="text-[#61D48A] font-bold text-lg">{stepupValue}</span>
         </div>
         <input
           type="range"
@@ -114,7 +114,7 @@ export default function CalculatorInputs({
           step="1"
           value={stepupValue}
           onChange={(e) => setStepupValue(Number(e.target.value))}
-          className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#293895]"
+          className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#61D48A]"
         />
         <div className="flex justify-between text-xs text-gray-500 mt-2">
           <span>0</span>
